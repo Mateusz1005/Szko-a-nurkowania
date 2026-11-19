@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Błękitna Głębia — Szkoła Nurkowania &amp; Wyprawy Oceaniczne | Warszawa</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&amp;family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #041329;
+        color: #d6e3ff;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+    }
+    .font-cinzel {
+      font-family: 'Cinzel', serif;
+    }
+    .frosted-glass {
+      background: rgba(8, 24, 43, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(76, 214, 251, 0.12);
+    }
+    .frosted-card {
+      background: linear-gradient(135deg, rgba(17, 32, 54, 0.75) 0%, rgba(8, 22, 40, 0.85) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .frosted-card-active {
+      border: 1px solid rgba(76, 214, 251, 0.35);
+      box-shadow: 0 16px 40px -10px rgba(0, 180, 216, 0.22);
+    }
+    .editorial-badge {
+      letter-spacing: 0.18em;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4cd6fb",
+            "primary-container": "#00b4d8",
+            "primary-glow": "#00e5ff",
+            "secondary": "#ffb4a3",
+            "secondary-container": "#ff6b4a",
+            "tertiary": "#27e0a9",
+            "background": "#041329",
+            "abyss-950": "#020a17",
+            "abyss-900": "#041329",
+            "abyss-800": "#08182b",
+            "surface": "#041329",
+            "surface-container": "#112036",
+            "surface-container-low": "#0d1c32",
+            "surface-container-high": "#1c2a41",
+            "surface-container-highest": "#27354c",
+            "on-surface": "#d6e3ff",
+            "on-surface-variant": "#bcc9ce",
+            "outline": "#869398",
+            "outline-variant": "#3d494d"
+          },
+          fontFamily: {
+            "display-hero": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "cinzel": ["Cinzel", "serif"],
+            "body-md": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-background font-body-md">
+<!-- ========================================== -->
+<!-- 1. HEADER / NAWIGACJA (EXPEDITION LUXURY) -->
+<!-- ========================================== -->
+<header class="fixed top-0 left-0 w-full z-50 frosted-glass transition-all duration-300">
+<div class="h-20 max-w-[1360px] mx-auto px-5 lg:px-10 flex items-center justify-between gap-4">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="relative w-10 h-10 rounded-full border border-primary/40 p-0.5 flex items-center justify-center bg-primary/10 group-hover:border-primary transition-all duration-300 shadow-[0_0_15px_rgba(76,214,251,0.25)]">
+<img alt="Błękitna Głębia" class="h-6 w-auto object-contain filter drop-shadow" src="https://lh3.googleusercontent.com/aida/ALJJyrDXNJzY5B27Er2aO5PN71RXM1zGi6VH4OUAa6k0I1eayH1zwy7SczQMC5VYKfbHwCkvyna0uF_fX39jBS-MQqXrWlKL9_cepJ1e6InKZYorSVXELXsBKue2TZ4impShUFMwZgtIh8Tdmv3tNXQjgzU6Hrty9ehuuSL2FH6mIdL0u4LyYjJIBV6hlm2DOWzHxx6co5Lc89CS8mz99ifFW6IXon0OyCmhwHzKiqabd0eQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-cinzel text-lg tracking-[0.14em] font-bold text-white group-hover:text-primary transition-colors">BŁĘKITNA GŁĘBIA</span>
+<span class="text-[10px] uppercase font-semibold text-primary/80 tracking-[0.25em]">Expedition &amp; Dive Academy</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center gap-7 text-[13px] tracking-widest uppercase font-medium">
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary/60" href="#sciezki">Kursy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary/60" href="#bazy">Deepspot &amp; Baseny</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary/60" href="#kadra">Kadra</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary/60" href="#galeria">Wyprawy &amp; Dziennik</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary/60" href="#cennik">Cennik</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary/60" href="#kontakt">Kontakt</a>
+</nav>
+<!-- Right Action Cluster -->
+<div class="flex items-center gap-4">
+<a class="hidden xl:flex items-center gap-2 text-xs tracking-wider uppercase font-semibold text-on-surface-variant hover:text-primary transition-colors py-2 px-3 rounded-lg border border-white/5 bg-white/[0.02]" href="tel:+48228409020">
+<span class="material-symbols-outlined text-primary text-[18px]">call</span>
+<span>+48 22 840 90 20</span>
+</a>
+<a class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-secondary-container to-[#ff8c69] text-white px-5 py-2.5 text-xs font-bold tracking-widest uppercase shadow-[0_4px_25px_rgba(255,107,74,0.45)] hover:shadow-[0_6px_30px_rgba(255,107,74,0.6)] hover:scale-[1.03] transition-all" href="#rezerwacja">
+<span>Zapisz się</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- 2. HERO: KINOWY EDITORIAL NATIONAL GEOGRAPHIC -->
+<!-- ========================================== -->
+<section class="relative min-h-[92vh] pt-32 pb-20 flex flex-col justify-between overflow-hidden bg-abyss-950">
+<!-- Hero Photography & Environmental Depth Layers -->
+<div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-45 scale-105 filter brightness-105 contrast-110 pointer-events-none transition-all duration-1000" style="background-image: url('https://lh3.googleusercontent.com/aida/ALJJyrCnqfUNwqEYWPGJDoOyOqc3vB9CP5JHfT4_ZufhmVGjwnhBydDuJm5bFRoBAmi8PYQah7eXijfPzG5JW9JUI71YZAloQXNWB947Ps7_tqY_T54LEUhN_FqOPo629gxHoc5mRoLvJH4Zn6pOTdbr0w2jAyqOt-HtKrwIJEnCcakygeIH7S6JstnUQDnlsV7i0tzt1jtFWfymd9o5HbwGUfcv2FiAljtjFwkei18xC3pT');"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-abyss-950/85 via-abyss-950/70 to-background pointer-events-none"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/15 via-transparent to-transparent pointer-events-none"></div>
+<div class="relative max-w-[1360px] w-full mx-auto px-5 lg:px-10 z-10 flex-1 flex flex-col justify-center">
+<!-- Top Tagline & Issue Indicator -->
+<div class="flex items-center gap-4 mb-6">
+<span class="editorial-badge inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-[0.2em] bg-primary/10 text-primary border border-primary/20 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+          PADI 5-Star Dive Academy &amp; Expedition Club
+        </span>
+<span class="hidden sm:inline-block h-[1px] w-12 bg-white/20"></span>
+<span class="hidden sm:inline-block text-[11px] tracking-[0.2em] text-on-surface-variant uppercase font-medium">Warszawa • Deepspot • Ocean Exp.</span>
+</div>
+<!-- Main Editorial Headline -->
+<div class="max-w-4xl">
+<h1 class="font-cinzel text-3xl sm:text-5xl lg:text-[64px] font-extrabold text-white leading-[1.12] tracking-tight">
+          Zanurz się w nieznane.<br/>
+<span class="font-display-hero font-extrabold bg-gradient-to-r from-primary via-[#60efff] to-tertiary bg-clip-text text-transparent italic">
+            Eksploruj z certyfikatem PADI 5 Star.
+          </span>
+</h1>
+<!-- Editorial Subquote -->
+<p class="mt-6 text-base sm:text-lg text-on-surface-variant/90 max-w-2xl font-light leading-relaxed border-l-2 border-primary/50 pl-5">
+          „Morze raz oczarowane, na zawsze trzyma duszę w sieci swego cudu.”<br/>
+<span class="text-xs tracking-wider uppercase text-primary font-semibold mt-1 inline-block">— Jacques-Yves Cousteau</span>
+<br class="hidden sm:block"/>
+          Akademia nurkowa dla koneserów głębokości. Indywidualne podejście, treningi w Deepspot (45m) i warszawskich basenach sportowych oraz wyprawy na dziewicze rafy oceaniczne.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="mt-10 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-secondary-container text-white font-semibold text-sm tracking-wider uppercase shadow-[0_4px_30px_rgba(255,107,74,0.5)] hover:scale-[1.02] hover:bg-[#ff7b5a] transition-all" href="#rezerwacja">
+<span class="material-symbols-outlined text-[20px]">scuba_diving</span>
+<span>Rozpocznij przygodę</span>
+</a>
+<a class="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-white/[0.05] hover:bg-white/[0.1] text-white border border-white/15 backdrop-blur-md font-semibold text-sm tracking-wider uppercase transition-all" href="#sciezki">
+<span>Odkryj ścieżki kursów</span>
+<span class="material-symbols-outlined text-[18px] text-primary">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Editorial Minimalist Trust Metric Strip -->
+<div class="relative w-full max-w-[1360px] mx-auto px-5 lg:px-10 z-10 pt-12">
+<div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl frosted-glass border border-white/10">
+<div class="flex flex-col border-r border-white/5 last:border-none pr-3">
+<div class="flex items-baseline gap-1">
+<span class="font-cinzel text-2xl lg:text-3xl font-bold text-white">850+</span>
+<span class="text-xs text-primary font-bold">ABSOLWENTÓW</span>
+</div>
+<span class="text-xs text-on-surface-variant font-light mt-1">Certyfikowanych nurków PADI &amp; CMAS</span>
+</div>
+<div class="flex flex-col border-r border-white/5 last:border-none pr-3">
+<div class="flex items-baseline gap-1">
+<span class="font-cinzel text-2xl lg:text-3xl font-bold text-white">18 Lat</span>
+<span class="text-xs text-secondary font-bold">HISTORII</span>
+</div>
+<span class="text-xs text-on-surface-variant font-light mt-1">Stażu w bezpiecznym szkoleniu w Warszawie</span>
+</div>
+<div class="flex flex-col border-r border-white/5 last:border-none pr-3">
+<div class="flex items-baseline gap-1">
+<span class="font-cinzel text-2xl lg:text-3xl font-bold text-white">45m</span>
+<span class="text-xs text-tertiary font-bold">DEEPSPOT</span>
+</div>
+<span class="text-xs text-on-surface-variant font-light mt-1">Dedykowane sesje w najgłębszym basenie Europy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-cinzel text-2xl lg:text-3xl font-bold text-white">4.9 / 5</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">star</span>
+</div>
+<span class="text-xs text-on-surface-variant font-light mt-1">Ponad 840 zweryfikowanych opinii Google</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. ŚCIEŻKI EKSPLORACJI (LUXURY COURSE CARDS)-->
+<!-- ========================================== -->
+<section class="py-24 lg:py-32 bg-background relative overflow-hidden" id="sciezki">
+<!-- Visual Subtleties -->
+<div class="absolute -top-40 right-0 w-[550px] h-[550px] bg-primary/10 rounded-full blur-[150px] pointer-events-none"></div>
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10">
+<!-- Section Editorial Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-14 border-b border-white/10">
+<div>
+<span class="editorial-badge text-primary uppercase text-xs font-bold tracking-[0.25em]">Program Szkoleniowy</span>
+<h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+            Ścieżki Eksploracji
+          </h2>
+<p class="text-on-surface-variant text-sm sm:text-base mt-2 max-w-xl font-light">
+            Od pierwszego oddechu pod taflą basenu w Warszawie po wyprawy wrakowe na Morzu Czerwonym. Prestiżowe standardy bez pośpiechu i masowości.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase bg-primary/15 text-primary border border-primary/30">Wszystkie certyfikaty</span>
+<span class="text-xs text-on-surface-variant uppercase tracking-widest pl-2">PADI 5★ &amp; CMAS</span>
+</div>
+</div>
+<!-- Exploration Pathways Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+<!-- PATH 1: OWD POCZĄTKUJĄCY -->
+<div class="frosted-card rounded-2xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-xl">
+<div class="relative h-52 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Scuba diving student practicing mask clearing underwater in crystal turquoise pool with instructor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-vR8TMb0rdfXmG_t2Y4uqzIpWtDonWuvERCqpEd2NowfjoqkIKt40V-zJwHmX6iNdPm0auqEdMQkJ85bVTQKv8WTURoxcgcN73tuzEeEDNBVqgtST2siszC1U6pXyteiGwqBJz7atn8-vvFxBFy8wZPHmt26LVUMNgqY-pjeYEJ9cuco9ocjHhg92K4_-ukEIzhyAm6jzlpnQR4RSS1p7rt-qmIi35GF9-ZeYY0w')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-abyss-950/40 to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-primary text-abyss-950 shadow-md">
+              Początkujący
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs text-primary font-semibold tracking-wider uppercase">
+<span>Do 18m głębokości</span>
+<span>4-5 Dni</span>
+</div>
+<h3 class="font-cinzel text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                Open Water Diver (OWD)
+              </h3>
+<p class="text-xs text-on-surface-variant leading-relaxed mt-2 font-light">
+                Twój oficjalny, międzynarodowy paszport do podwodnego świata. E-learning w domu, 5 modułów w Warszawie oraz nurkowania na wodach otwartych.
+              </p>
+<!-- Technical specs list -->
+<div class="mt-4 pt-4 border-t border-white/5 space-y-2 text-xs text-on-surface-variant font-light">
+<div class="flex items-center justify-between">
+<span class="text-white/70">Wymagania wstępne:</span>
+<span class="text-white font-medium">Brak (od 10 lat)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Sprzęt:</span>
+<span class="text-primary font-medium">Komplet w cenie</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Certyfikacja:</span>
+<span class="text-white font-medium">PADI eCard + Plastik</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+<div>
+<span class="text-[10px] tracking-widest text-on-surface-variant uppercase">Inwestycja</span>
+<p class="font-cinzel text-xl font-bold text-white">1 890 PLN</p>
+</div>
+<a class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 hover:bg-primary hover:text-abyss-950 text-white transition-all" href="#rezerwacja">
+                Szczegóły
+              </a>
+</div>
+</div>
+</div>
+<!-- PATH 2: AOWD & DEEP (ZAAWANSOWANE) -->
+<div class="frosted-card rounded-2xl overflow-hidden flex flex-col justify-between hover:border-tertiary/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-xl">
+<div class="relative h-52 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Advanced scuba diver hovering horizontally over historic shipwreck in crystal clear deep water" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBu1_lFi4KzmbTRuiMgYtlESbnpr0nbUXZ2aAOZtrWrHImlLpR0kEgQRWzsIi0bFcXSd-lG6r0ffi9f86jnSKsVllPBCX6LzLeG3A-3-bktV0MqFv33UNA0wYbZd1DCp5x7mKCGK_K1aPY3hT8-zNdV5SmrP5m5y_Re-QXt4h9WTOcmtvQYRIBzy6hQTwTy7zCUpWcmp6OUFzTulhjCliPPVzer_aj5JafQCc9LggI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-abyss-950/40 to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-tertiary text-abyss-950 shadow-md">
+              Zaawansowany
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs text-tertiary font-semibold tracking-wider uppercase">
+<span>Do 30m głębokości</span>
+<span>Weekend</span>
+</div>
+<h3 class="font-cinzel text-xl font-bold text-white mt-2 group-hover:text-tertiary transition-colors">
+                Advanced Open Water (AOWD)
+              </h3>
+<p class="text-xs text-on-surface-variant leading-relaxed mt-2 font-light">
+                Poszerz granice. 5 nurkowań przygodowych: Deep Dive (30m), nawigacja podwodna z kompasem, nurkowanie wrakowe i fascynująca nocna eksploracja.
+              </p>
+<div class="mt-4 pt-4 border-t border-white/5 space-y-2 text-xs text-on-surface-variant font-light">
+<div class="flex items-center justify-between">
+<span class="text-white/70">Wymagania wstępne:</span>
+<span class="text-white font-medium">Certyfikat OWD</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Wyporność:</span>
+<span class="text-tertiary font-medium">Zaawansowany trym</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Uprawnienia:</span>
+<span class="text-white font-medium">Brak limitu ważności</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+<div>
+<span class="text-[10px] tracking-widest text-on-surface-variant uppercase">Inwestycja</span>
+<p class="font-cinzel text-xl font-bold text-white">1 650 PLN</p>
+</div>
+<a class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 hover:bg-tertiary hover:text-abyss-950 text-white transition-all" href="#rezerwacja">
+                Szczegóły
+              </a>
+</div>
+</div>
+</div>
+<!-- PATH 3: BUBBLEMAKER & SEAL TEAM (DZIECI) -->
+<div class="frosted-card rounded-2xl overflow-hidden flex flex-col justify-between hover:border-secondary/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-xl">
+<div class="relative h-52 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Smiling child wearing diving mask and breathing regulator in warm pool underwater under instructor supervision" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANK2rIzLteb8djFyYT2eWB-oHC7tbDQ_YLm-W_NnbCXbCbSZGkqwdTGFxqZfsHcNdSQ1-kpbsW594npUE7h-aEdUtfPKmF2AaeptoUvfDvnfiF23meMJ6HHUXohgSE59c9LeXNvulQEggmyC_OA3-VWsa_-BY2zc4zwBLg-W8lRf8EbRWyjuH0oZ8Pfslo6qFyWxDkvRpahyzhWmL7tkFA4mhFLjV6yQD4dIrFF8I')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-abyss-950/40 to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-secondary text-abyss-950 shadow-md">
+              Dla Dzieci (8-12 lat)
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs text-secondary font-semibold tracking-wider uppercase">
+<span>Max 2 metry</span>
+<span>2-3 Godziny</span>
+</div>
+<h3 class="font-cinzel text-xl font-bold text-white mt-2 group-hover:text-secondary transition-colors">
+                Bubblemaker &amp; Seal Team
+              </h3>
+<p class="text-xs text-on-surface-variant leading-relaxed mt-2 font-light">
+                Edukacja, spokój i fascynująca zabawa w wodzie pod okiem certyfikowanych instruktorów pedagogów. Płytki, ciepły basen i lekki osprzęt XS.
+              </p>
+<div class="mt-4 pt-4 border-t border-white/5 space-y-2 text-xs text-on-surface-variant font-light">
+<div class="flex items-center justify-between">
+<span class="text-white/70">Opieka instruktorska:</span>
+<span class="text-white font-medium">1:2 kameralnie</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Wypożyczenie:</span>
+<span class="text-secondary font-medium">Sprzęt dziecięcy</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Nagroda:</span>
+<span class="text-white font-medium">Dyplom &amp; Medal PADI</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+<div>
+<span class="text-[10px] tracking-widest text-on-surface-variant uppercase">Inwestycja</span>
+<p class="font-cinzel text-xl font-bold text-white">390 PLN</p>
+</div>
+<a class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 hover:bg-secondary hover:text-abyss-950 text-white transition-all" href="#rezerwacja">
+                Szczegóły
+              </a>
+</div>
+</div>
+</div>
+<!-- PATH 4: EKSPEDYCJE WRAKOWE & RAFOWE -->
+<div class="frosted-card rounded-2xl overflow-hidden flex flex-col justify-between hover:border-primary-container/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-xl">
+<div class="relative h-52 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Luxury dive liveaboard boat moored over turquoise lagoon reef at sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyaX5AGkv74jn3GdnRiRCQpk6LBvUWVG07APJliIfyo6utY1uY1x2gIOA-BVCMsDBChYrouQYi3iAUWtYxKiN72iWQoUe5KpzZ1jXGc6n6b0KfZnN5Z-JWPIYO4sOsc-d9EX3AzY8G_n1TVfXTktN1Wf-guPQYD25pFvXHrnAb5tdBoK9feYSuepmAlcu4KLxUjzDd9jI36klzT2XyGMG1Ly3UltGD2koepvylAbs')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-abyss-950/40 to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-gradient-to-r from-secondary-container to-amber-500 text-white shadow-md">
+              Wyprawy Klubowe
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs text-primary-container font-semibold tracking-wider uppercase">
+<span>Egipt • Bałtyk • Meksyk</span>
+<span>7-10 Dni</span>
+</div>
+<h3 class="font-cinzel text-xl font-bold text-white mt-2 group-hover:text-primary-container transition-colors">
+                Wyprawy Oceaniczne &amp; Wraki
+              </h3>
+<p class="text-xs text-on-surface-variant leading-relaxed mt-2 font-light">
+                Dołącz do rejsów liveaboard na Morzu Czerwonym, nurkowań w cenotach Jukatanu oraz eksploracji wraków Bałtyku w towarzystwie naszych instruktorów.
+              </p>
+<div class="mt-4 pt-4 border-t border-white/5 space-y-2 text-xs text-on-surface-variant font-light">
+<div class="flex items-center justify-between">
+<span class="text-white/70">Kolejny wylot:</span>
+<span class="text-secondary font-medium">Kwiecień 2025</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Destynacja:</span>
+<span class="text-white font-medium">Egipt Północ &amp; Wraki</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-white/70">Dostępność:</span>
+<span class="text-tertiary font-medium">Ostatnie 4 miejsca</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+<div>
+<span class="text-[10px] tracking-widest text-on-surface-variant uppercase">Rejs Safari</span>
+<p class="font-cinzel text-xl font-bold text-white">4 850 PLN</p>
+</div>
+<a class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 hover:bg-secondary-container hover:text-white text-white transition-all" href="#kontakt">
+                Szczegóły
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. GDZIE TRENUJEMY (DEEPSPOT & INFLANCKA)   -->
+<!-- ========================================== -->
+<section class="py-24 bg-abyss-950 relative border-t border-white/5" id="bazy">
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<span class="editorial-badge text-tertiary uppercase text-xs font-bold tracking-[0.25em]">Infrastruktura Szkoleniowa</span>
+<h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+            Gdzie Trenujemy
+          </h2>
+<p class="text-on-surface-variant text-sm sm:text-base mt-2 max-w-2xl font-light">
+            Perfekcja wymaga idealnego środowiska. Ćwiczymy wyłącznie na dedykowanych torach głębinowych i w najnowocześniejszych obiektach hydrotechnicznych.
+          </p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Base 1: Deepspot -->
+<div class="frosted-card rounded-2xl overflow-hidden p-8 flex flex-col justify-between relative group hover:border-primary/40 transition-all duration-300">
+<div class="relative h-64 sm:h-72 rounded-xl overflow-hidden mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Scuba divers descending inside the 45-meter Deepspot pool tube illuminated with futuristic blue lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_EYeEym66tzlJBCaLmk5QX1MUn51yFTPKxpHc7INEwa4GLKXRQ3Kj-4I6RqJzWVKG8jitcN93vnESNZ6h2QeVk_3o0kpBQo4OCiON_8P0WrTIyWZLYf9UcbqpQUx_m4vyZ2vt74KWlvsCEvc025tv9Eu8lPgEF90iadgeBf3CXUYkJIwLxIDAixgxLwADld26hMYMxmQilBr_lTv5Z8jjs_V5T4iKJLbnE5_FovI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-primary/40 text-primary text-xs font-bold tracking-widest uppercase">
+              Najgłębszy basen w Europie — 45M
+            </div>
+</div>
+<div>
+<div class="flex items-center gap-2 text-primary font-semibold text-xs tracking-widest uppercase mb-1">
+<span class="material-symbols-outlined text-[18px]">waves</span>
+<span>Baza Zaawansowana &amp; Treningi Głębokie</span>
+</div>
+<h3 class="font-cinzel text-2xl font-bold text-white">Deepspot Mszczonów</h3>
+<p class="text-sm text-on-surface-variant font-light mt-3 leading-relaxed">
+              Krystaliczna woda o temperaturze 32°C, głębokość 45 metrów, sztuczne jaskinie i wrak na dnie tuby. Idealne, sterylne i bezpieczne środowisko do opanowania kontroli pływalności i nurkowań głębokich AOWD bez fal i prądów.
+            </p>
+<div class="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-white/10 text-xs">
+<div>
+<span class="text-on-surface-variant block uppercase text-[10px] tracking-wider">Lokalizacja</span>
+<span class="text-white font-medium">Mszczonów (30 min od Warszawy S8)</span>
+</div>
+<div>
+<span class="text-on-surface-variant block uppercase text-[10px] tracking-wider">Warunki termiczne</span>
+<span class="text-white font-medium">32°C — bez grubych pianek</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Base 2: Ośrodek Inflancka Warszawa -->
+<div class="frosted-card rounded-2xl overflow-hidden p-8 flex flex-col justify-between relative group hover:border-tertiary/40 transition-all duration-300">
+<div class="relative h-64 sm:h-72 rounded-xl overflow-hidden mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Clear indoor sports swimming pool in Warsaw with dive trainees and instructor preparing scuba gear on pool edge" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCoqpJ5jvqTCVsSt30nPRxeAmijuKlQ7Y3aSOtrEX-ynLDOmCmH8VgBj2tBevEIyhIVFHP-TifKRAQW3BTzI94u-EJ-QDwQO6REm2AR8dxljeiKFDSsrYL8u-EhEW-m2Eyiviwia-77DEOzk4-GNCaXKYDl0tep1xUJfS8J-n19P7A9y83bAzdGKsgKIGLLPF8CEmlniwfs2eaypWPeYmZkWWwcxX0sPiL8WHIWkw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-tertiary/20 backdrop-blur-md border border-tertiary/40 text-tertiary text-xs font-bold tracking-widest uppercase">
+              Centrum Szkolenia Podstawowego
+            </div>
+</div>
+<div>
+<div class="flex items-center gap-2 text-tertiary font-semibold text-xs tracking-widest uppercase mb-1">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>Serce Warszawy • Śródmieście Północne</span>
+</div>
+<h3 class="font-cinzel text-2xl font-bold text-white">Centrum Sportowe Inflancka</h3>
+<p class="text-sm text-on-surface-variant font-light mt-3 leading-relaxed">
+              Główna baza zajęć basenowych OWD oraz warsztatów Scuba Review w Warszawie. Nowoczesna stacja napełniania butli z atestem czystości tlenowej, magazyn sprzętu marek Scubapro i Apeks oraz sale wykładowe z multimediami.
+            </p>
+<div class="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-white/10 text-xs">
+<div>
+<span class="text-on-surface-variant block uppercase text-[10px] tracking-wider">Lokalizacja</span>
+<span class="text-white font-medium">ul. Inflancka 8, Warszawa</span>
+</div>
+<div>
+<span class="text-on-surface-variant block uppercase text-[10px] tracking-wider">Godziny sesji</span>
+<span class="text-white font-medium">Sesje wieczorne &amp; weekendowe</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. KADRA & MISTRZOWIE GŁĘBIN (EXPEDITION CREW) -->
+<!-- ========================================== -->
+<section class="py-24 lg:py-32 bg-background relative overflow-hidden" id="kadra">
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<span class="editorial-badge text-secondary uppercase text-xs font-bold tracking-[0.25em]">Certyfikowani Eksperci PADI &amp; CMAS</span>
+<h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+            Kadra &amp; Mistrzowie Głębin
+          </h2>
+<p class="text-on-surface-variant text-sm sm:text-base mt-2 max-w-xl font-light">
+            Instruktorzy z wielotysięcznym stażem zanurzeń. Ratownicy wodni, pasjonaci morskiej biologii i archeologii podwodnej, którzy uczą bezstresowego obcowania z głębią.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<div class="px-3.5 py-1.5 rounded-lg frosted-glass text-xs font-semibold text-primary border border-primary/20">PADI 5★ Center</div>
+<div class="px-3.5 py-1.5 rounded-lg frosted-glass text-xs font-semibold text-tertiary border border-tertiary/20">CMAS M2</div>
+<div class="px-3.5 py-1.5 rounded-lg frosted-glass text-xs font-semibold text-secondary border border-secondary/20">DAN Safety Partner</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- INSTRUCTOR 1: Piotr Kamiński -->
+<div class="frosted-card rounded-2xl p-6 group hover:border-primary/50 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative h-80 rounded-xl overflow-hidden mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of seasoned male dive instructor Piotr Kamiński with warm smile wearing neoprene dive suit on boat deck" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD88rg_aU-yaNAQNxFdlDk_IlM0TOU2SDRqQCAyW5TqHTw5e99ovBJTpivf0-uaS9PBxpBgi2O59uEyyNehe3uQP9cEth9dcyTd4XqQNkcuye8sk7sKY_uVY58l-5-eGkOMvsJ9OsUxrX4y16DvW7W-24p6hheOEvGLuC5lsRDwLeJdEjFEcGvoDmyEI2wVlAj1P5zLVVmyhJXviD9mudZjTtcu3NSqFlNYBg5Rt7c')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-abyss-950/80 backdrop-blur-md border border-white/10 text-primary text-xs font-bold">
+                4 200+ zanurzeń
+              </div>
+</div>
+<div class="flex items-center justify-between">
+<h3 class="font-cinzel text-xl font-bold text-white">Piotr „Orka” Kamiński</h3>
+<span class="text-xs font-bold text-primary uppercase tracking-wider">PADI MSDT</span>
+</div>
+<p class="text-xs text-primary/80 uppercase tracking-widest mt-1">CMAS M2 • Założyciel Błękitnej Głębi</p>
+<p class="text-xs text-on-surface-variant font-light mt-3 leading-relaxed">
+              18 lat w wodzie. Specjalista ekspedycji wrakowych na Bałtyku i fotografii makro. Wykształcił ponad 1200 płetwonurków. Wyróżnia się stoickim spokojem i precyzją.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-on-surface-variant font-medium">
+<span>Specjalizacja:</span>
+<span class="text-white">Wraki, Deep &amp; Suchy Skafander</span>
+</div>
+</div>
+<!-- INSTRUCTOR 2: Anna Włodarczyk -->
+<div class="frosted-card rounded-2xl p-6 group hover:border-tertiary/50 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative h-80 rounded-xl overflow-hidden mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of female diving instructor Anna Włodarczyk smiling warmly holding diving mask next to clear turquoise water" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpc53qtWg--dImFENiqsPZITx-ui2dlGUn140EkMoi97_zsSJlteGK9TaQpiwYILPvEhxkZGE9XBw19wsuPqgCAukZsTeHMAY5gdKY4zo-_uHLrWrpIhxLyVU7LpoM0FO3FqTDUSBHRJs7tvrlBdoeJ3NYBM4ts_pWV7I2zyulEOGHOVjQm0L1n16klFRcc3WWJDYdgxpOW3SU3vxAXCY6I7iHj1DN2lrouCNaZ5E')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-abyss-950/80 backdrop-blur-md border border-white/10 text-tertiary text-xs font-bold">
+                2 100+ zanurzeń
+              </div>
+</div>
+<div class="flex items-center justify-between">
+<h3 class="font-cinzel text-xl font-bold text-white">Anna Włodarczyk</h3>
+<span class="text-xs font-bold text-tertiary uppercase tracking-wider">PADI IDC STAFF</span>
+</div>
+<p class="text-xs text-tertiary/80 uppercase tracking-widest mt-1">Instruktor EFR • Specjalista Dzieci</p>
+<p class="text-xs text-on-surface-variant font-light mt-3 leading-relaxed">
+              Pedagog z wykształcenia i pasjonatka freedivingu. Koordynuje sekcję dziecięcą Bubblemaker oraz szkolenia ratownictwa pierwszej pomocy EFR.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-on-surface-variant font-medium">
+<span>Specjalizacja:</span>
+<span class="text-white">Bubblemaker, EFR &amp; Pływalność</span>
+</div>
+</div>
+<!-- INSTRUCTOR 3: Michał Szymański -->
+<div class="frosted-card rounded-2xl p-6 group hover:border-secondary/50 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative h-80 rounded-xl overflow-hidden mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of male technical diver and instructor Michał Szymański preparing twinset tanks next to deep indoor dive tube" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0bUcXwpa5Wn6tvwXfHoYRtS88VTL2jzlXjB0kZmQLX_QWZ0k46BNgTb-Pe8LFwboM-itOmJRTQkDjoLeWjbGOmoOTaK9u8WHEY85GvHnypugbX3sHCwreBxX3FeBSnoMG_XUGyWc7kEFEfLrCGhZNT1oytYRxF4plzghe_X8X3cti9_lrGwDFZ9hdw7DhrVCS1IQ_uCcy6nQijxBSZAdC24OzPJBNX9566XMzAlE')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-abyss-950/80 backdrop-blur-md border border-white/10 text-secondary text-xs font-bold">
+                3 400+ zanurzeń
+              </div>
+</div>
+<div class="flex items-center justify-between">
+<h3 class="font-cinzel text-xl font-bold text-white">Michał Szymański</h3>
+<span class="text-xs font-bold text-secondary uppercase tracking-wider">CMAS M1 / TEC</span>
+</div>
+<p class="text-xs text-secondary/80 uppercase tracking-widest mt-1">Instruktor Deepspot &amp; Trimix</p>
+<p class="text-xs text-on-surface-variant font-light mt-3 leading-relaxed">
+              Wirtuoz pływalności i nurkowań jaskiniowych. Prowadzi zaawansowane warsztaty w Deepspot (45m). Uczy technik frog kick i precyzyjnego panowania nad oddechem.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-on-surface-variant font-medium">
+<span>Specjalizacja:</span>
+<span class="text-white">Deepspot 45m, Trimix &amp; Jaskinie</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. DZIENNIK WYPRAW & GALERIA (EXPEDITION LOG)-->
+<!-- ========================================== -->
+<section class="py-24 bg-abyss-950 relative border-t border-white/5" id="galeria">
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<span class="editorial-badge text-primary uppercase text-xs font-bold tracking-[0.25em]">Fotoreportaże Oceaniczne</span>
+<h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+            Dziennik Wypraw &amp; Kadry z Tonii
+          </h2>
+<p class="text-on-surface-variant text-sm sm:text-base mt-2 max-w-xl font-light">
+            Świat podwodny w obiektywach naszych instruktorów i kursantów. Bez filtrów, z autentyczną pasją do dzikiej natury oceanu.
+          </p>
+</div>
+<!-- Filter Tags -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-primary text-abyss-950 shadow-md">Wszystkie</button>
+<button class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider frosted-glass hover:text-white transition-colors">Morze Czerwone</button>
+<button class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider frosted-glass hover:text-white transition-colors">Deepspot (45m)</button>
+<button class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider frosted-glass hover:text-white transition-colors">Wraki Bałtyku</button>
+</div>
+</div>
+<!-- Bento Visual Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<!-- Large Hero Feature -->
+<div class="relative md:col-span-2 h-80 sm:h-96 rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Dense school of orange anthias and bright yellow butterflyfish swimming over lush soft coral reef in Red Sea Egypt" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARns7TYmoZCk0zzKrjDXbMF9VSM4FpUIws-kj-zlxG93AS6BqSj1Fy1Y5NNKtY8HMkptTZYdkBO3EtmDjaGo5p5YGnocAci0vtRvA74D3BPOwqbiMk-bP9jB7hEmxGpMayc1jkGWqsxeADQWz3p6xFXbMBjhPpqSFji71-Fryt-N6KRdR06b23skl3W3zudNguGbejQUY13akSaVeZRu-g4nDlp2JoJnna554tZSI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950/90 via-abyss-950/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-[10px] font-bold tracking-widest text-primary uppercase">Ekspedycja Synaj • Ras Mohammed</span>
+<h4 class="font-cinzel text-xl sm:text-2xl font-bold text-white mt-1">Żyjący gobelin koralowy Morza Czerwonego</h4>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="relative h-80 sm:h-96 rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Scuba diver shining light through cargo hold of a sunken historical ship surrounded by blue sunbeams" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0RsECZ0_IaoImcosOuY-KFiWxR-tp9HTsEn1dBw9qGw84XLFEaiThQK5o8jPZKhHNvV1O5EOyw3A0oxZrfkZsMiM7mwX2PM4o1UG_3uDysQN0W95oAToR6XbBdZooNkKnqvE7OtDgqdkosGco_brWTMAObPa2RdrBe5VshNJQ8uJid3dFqWgBc8vUJjny87nnzsNT0eE77c1wg218Z8NMtWao3BF3hU-pv_SPrNs')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-[10px] font-bold tracking-widest text-secondary uppercase">Eksploracja Wrakowa</span>
+<h4 class="font-cinzel text-lg font-bold text-white mt-1">Cienie historii: SS Thistlegorm</h4>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="relative h-80 sm:h-96 rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Scuba divers descending vertically inside 45 meter deep pool Deepspot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_EYeEym66tzlJBCaLmk5QX1MUn51yFTPKxpHc7INEwa4GLKXRQ3Kj-4I6RqJzWVKG8jitcN93vnESNZ6h2QeVk_3o0kpBQo4OCiON_8P0WrTIyWZLYf9UcbqpQUx_m4vyZ2vt74KWlvsCEvc025tv9Eu8lPgEF90iadgeBf3CXUYkJIwLxIDAixgxLwADld26hMYMxmQilBr_lTv5Z8jjs_V5T4iKJLbnE5_FovI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-[10px] font-bold tracking-widest text-tertiary uppercase">Deepspot Mszczonów</span>
+<h4 class="font-cinzel text-lg font-bold text-white mt-1">Otchłań 45 metrów w kontrolowanych warunkach</h4>
+</div>
+</div>
+<!-- Bottom Wide Tile -->
+<div class="relative md:col-span-3 lg:col-span-4 h-72 rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Group of five enthusiastic diving students floating at water surface in full gear making ok sign gestures" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1LbDwHpPmIiygyQ1RRQjooKSNy4X64ugdyeb_4IJr0NSnzrN4n6MAg15G3s3PSITB5dwbFU2FZS2qmedc6bJWF2kQFRJI9GTVeYIJLx-YI_2gCJDsKBbs0xP1kbkk0cRwlUWjpbyqOumzG9497dsBqCeT5IU8Sk1_AkgkotyP2S7SHkV1kq6H3BY2nPCN_zTUSBVMiLOlb3GdwlBCurcz2UBah8nbekLswYB5EWU')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-abyss-950/95 via-abyss-950/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<span class="text-[10px] font-bold tracking-widest text-primary uppercase">Społeczność Błękitnej Głębi</span>
+<h4 class="font-cinzel text-xl sm:text-2xl font-bold text-white mt-1">Przyjaźnie zrodzone w ciszy głębin</h4>
+<p class="text-xs text-on-surface-variant font-light mt-1 max-w-lg">Cotygodniowe wspólne wypady na baseny, regularne spotkania klubowe w Warszawie i ekspedycje na całym globie.</p>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary/20 text-primary border border-primary/40 hover:bg-primary hover:text-abyss-950 text-xs font-bold tracking-wider uppercase transition-all shrink-0" href="#kontakt">
+<span>Dołącz do klubu</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 7. OPINIE I DOZNANIA (ELEGANT EDITORIAL REVIEWS) -->
+<!-- ========================================== -->
+<section class="py-24 bg-background relative overflow-hidden">
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<span class="editorial-badge text-primary uppercase text-xs font-bold tracking-[0.25em]">Głosy Społeczności</span>
+<h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+            Opinie &amp; Doznania
+          </h2>
+</div>
+<div class="flex items-center gap-3 px-5 py-2.5 rounded-2xl frosted-glass border border-white/10">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<span class="text-xs text-white font-bold">4.9 / 5</span>
+<span class="text-xs text-on-surface-variant">• 840+ recenzji w Google</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="frosted-card rounded-2xl p-8 flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<p class="text-sm text-on-surface leading-relaxed font-light italic">
+              „Zaczynałem od zera z paraliżującym lękiem przed głęboką wodą. Instruktor Michał na basenie Inflancka wykazał się anielską cierpliwością. Dziś mam za sobą pierwszy wyjazd do Egiptu i certyfikat OWD. To było najlepsze doświadczenie dekady.”
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-white/10 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 text-primary font-bold flex items-center justify-center text-xs">TK</div>
+<div>
+<p class="text-sm font-bold text-white">Tomasz Kamiński</p>
+<span class="text-[11px] text-on-surface-variant font-light">Absolwent OWD • Warszawa Mokotów</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="frosted-card rounded-2xl p-8 flex flex-col justify-between border-primary/30">
+<div>
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<p class="text-sm text-on-surface leading-relaxed font-light italic">
+              „Profesjonalizm na poziomie światowym. Sprzęt nowy, pachnący, bezwzględne przestrzeganie procedur DAN. Szkolenie w Deepspot na 45 metrach przygotowało mnie do nurkowania na rafach bez cienia stresu. Klasa sama w sobie.”
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-white/10 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 text-secondary font-bold flex items-center justify-center text-xs">PK</div>
+<div>
+<p class="text-sm font-bold text-white">dr Paweł Kozłowski</p>
+<span class="text-[11px] text-on-surface-variant font-light">Nurek AOWD • Warszawa Śródmieście</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="frosted-card rounded-2xl p-8 flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<p class="text-sm text-on-surface leading-relaxed font-light italic">
+              „Nasz 9-letni syn brał udział w programie Bubblemaker u p. Ani. Podejście do dzieci to czysta poezja i spokój. Synek nie chciał wychodzić z wody i pyta, kiedy lecimy oglądać rybki na żywo!”
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-white/10 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary/20 text-tertiary font-bold flex items-center justify-center text-xs">MF</div>
+<div>
+<p class="text-sm font-bold text-white">Magdalena Falencka</p>
+<span class="text-[11px] text-on-surface-variant font-light">Mama Franka • Warszawa Wilanów</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 8. KLAROWNY CENNIK & PAKIETY ALL-INCLUSIVE -->
+<!-- ========================================== -->
+<section class="py-24 lg:py-32 bg-abyss-950 relative border-t border-white/5" id="cennik">
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="editorial-badge text-primary uppercase text-xs font-bold tracking-[0.25em]">Przejrzystość Bez Ukrytych Opłat</span>
+<h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+          Klarowny Cennik &amp; Pakiety
+        </h2>
+<p class="text-on-surface-variant text-sm sm:text-base mt-2 font-light">
+          Wszystkie pakiety zawierają kompletny sprzęt, opłaty basenowe oraz materiały dydaktyczne. Zero dopłat na miejscu.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+<!-- Tier 1: Podstawowy OWD -->
+<div class="frosted-card rounded-2xl p-7 flex flex-col justify-between">
+<div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Poziom Wstępny</span>
+<h3 class="font-cinzel text-xl font-bold text-white mt-1">Podstawowy OWD</h3>
+<p class="text-xs text-on-surface-variant mt-2 font-light">Kompletny certyfikat PADI / CMAS do 18m głębokości.</p>
+<div class="my-6 pb-6 border-b border-white/10">
+<span class="font-cinzel text-3xl font-extrabold text-white">1 890</span>
+<span class="text-xs text-on-surface-variant ml-1 font-semibold">PLN</span>
+</div>
+<ul class="space-y-3 text-xs text-on-surface-variant font-light">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>5 sesji basenowych w Warszawie</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>Teoria e-learning w domu</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>Kompletny sprzęt na czas kursu</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>Plastikowy certyfikat + profil eCard</li>
+</ul>
+</div>
+<a class="mt-8 w-full py-3 rounded-full text-center text-xs font-bold uppercase tracking-wider bg-white/10 hover:bg-white/20 text-white transition-all" href="#rezerwacja">
+            Wybierz kurs
+          </a>
+</div>
+<!-- Tier 2: OWD VIP + Deepspot (FEATURED BESTSELLER) -->
+<div class="frosted-card frosted-card-active rounded-2xl p-7 flex flex-col justify-between relative transform lg:-translate-y-4">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-secondary-container text-white text-[10px] font-extrabold uppercase tracking-widest shadow-lg">
+            Rekomendowany Wybór
+          </div>
+<div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-secondary">All-Inclusive VIP</span>
+<h3 class="font-cinzel text-xl font-bold text-white mt-1">OWD VIP + Deepspot</h3>
+<p class="text-xs text-on-surface-variant mt-2 font-light">Elastyczne terminy 1-na-1 oraz trening w najgłębszym basenie Europy (45m).</p>
+<div class="my-6 pb-6 border-b border-white/10">
+<span class="font-cinzel text-3xl font-extrabold text-secondary">2 490</span>
+<span class="text-xs text-on-surface-variant ml-1 font-semibold">PLN</span>
+</div>
+<ul class="space-y-3 text-xs text-white font-normal">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span>Wszystko z pakietu podstawowego</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span>Dedykowana sesja Deepspot (45m)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span>Indywidualny terminarz instruktora</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span>Pamiątkowe wideo i zdjęcia 4K z wody</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span>Certyfikowana maska nurkowa w prezencie</li>
+</ul>
+</div>
+<a class="mt-8 w-full py-3.5 rounded-full text-center text-xs font-bold uppercase tracking-wider bg-secondary-container text-white shadow-[0_4px_25px_rgba(255,107,74,0.4)] hover:bg-[#ff7b5a] transition-all" href="#rezerwacja">
+            Zapisz się VIP
+          </a>
+</div>
+<!-- Tier 3: Advanced OWD -->
+<div class="frosted-card rounded-2xl p-7 flex flex-col justify-between">
+<div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-tertiary">Poziom Średni</span>
+<h3 class="font-cinzel text-xl font-bold text-white mt-1">Advanced OWD</h3>
+<p class="text-xs text-on-surface-variant mt-2 font-light">Uprawnienia do 30m głębokości i 5 nurkowań adventure.</p>
+<div class="my-6 pb-6 border-b border-white/10">
+<span class="font-cinzel text-3xl font-extrabold text-white">1 650</span>
+<span class="text-xs text-on-surface-variant ml-1 font-semibold">PLN</span>
+</div>
+<ul class="space-y-3 text-xs text-on-surface-variant font-light">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check</span>5 nurkowań przygodowych na wodach otwartych</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check</span>Moduł głęboki (30m) i nawigacja</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check</span>Komplet butli i balastu w cenie</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check</span>Certyfikacja AOWD bezterminowa</li>
+</ul>
+</div>
+<a class="mt-8 w-full py-3 rounded-full text-center text-xs font-bold uppercase tracking-wider bg-white/10 hover:bg-white/20 text-white transition-all" href="#rezerwacja">
+            Wybierz kurs
+          </a>
+</div>
+<!-- Tier 4: Scuba Review & Intro -->
+<div class="frosted-card rounded-2xl p-7 flex flex-col justify-between">
+<div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Odświeżenie &amp; Próba</span>
+<h3 class="font-cinzel text-xl font-bold text-white mt-1">Scuba Review / Intro</h3>
+<p class="text-xs text-on-surface-variant mt-2 font-light">Powrót do formy przed wyjazdem lub pierwsze nurkowanie próbne.</p>
+<div class="my-6 pb-6 border-b border-white/10">
+<span class="font-cinzel text-3xl font-extrabold text-white">350</span>
+<span class="text-xs text-on-surface-variant ml-1 font-semibold">PLN</span>
+</div>
+<ul class="space-y-3 text-xs text-on-surface-variant font-light">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>2h w wodzie pod okiem instruktora</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>Przegląd procedur awaryjnych</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>Cały sprzęt nurkowy wliczony</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span>Wpis do oficjalnego Logbooka</li>
+</ul>
+</div>
+<a class="mt-8 w-full py-3 rounded-full text-center text-xs font-bold uppercase tracking-wider bg-white/10 hover:bg-white/20 text-white transition-all" href="#rezerwacja">
+            Wybierz termin
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 9. ZAPLANUJ SWOJE PIERWSZE ZANURZENIE (REZERWACJA) -->
+<!-- ========================================== -->
+<section class="py-24 lg:py-32 bg-background relative overflow-hidden" id="kontakt">
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10" id="rezerwacja">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: Logistics & Map details (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="editorial-badge text-primary uppercase text-xs font-bold tracking-[0.25em]">Lokalizacja &amp; Dojazd</span>
+<h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mt-2">
+              Baza Główna Warszawa
+            </h2>
+<p class="text-sm text-on-surface-variant font-light mt-3 leading-relaxed">
+              Zapraszamy na konsultacje, dobór maski i sprzętu oraz pierwsze zanurzenie. Nasi instruktorzy odpowiedzą na wszelkie pytania o przeciwwskazania zdrowotne i harmonogram zajęć.
+            </p>
+<div class="mt-8 space-y-4">
+<div class="flex items-start gap-3.5 p-4 rounded-xl frosted-card">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">location_on</span>
+<div>
+<h4 class="text-sm font-bold text-white">Centrum Szkoleniowe i Basen Inflancka</h4>
+<p class="text-xs text-on-surface-variant mt-0.5">ul. Inflancka 8, Warszawa (Śródmieście)</p>
+<span class="text-[11px] text-primary font-medium mt-1 block">Recepcja, sklep nurkowy &amp; tory szkoleniowe</span>
+</div>
+</div>
+<div class="flex items-start gap-3.5 p-4 rounded-xl frosted-card">
+<span class="material-symbols-outlined text-tertiary text-[22px] mt-0.5">waves</span>
+<div>
+<h4 class="text-sm font-bold text-white">Baza Deepspot Mszczonów (45m)</h4>
+<p class="text-xs text-on-surface-variant mt-0.5">ul. Warszawska 50, Mszczonów (30 min trasą S8)</p>
+<span class="text-[11px] text-tertiary font-medium mt-1 block">Treningi głębokie, jaskinie &amp; wrak</span>
+</div>
+</div>
+</div>
+<!-- Direct Contact -->
+<div class="mt-8 pt-6 border-t border-white/10 space-y-2 text-xs">
+<a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="tel:+48228409020">
+<span class="material-symbols-outlined text-primary text-[18px]">call</span>
+<span class="font-bold text-sm">+48 22 840 90 20</span>
+<span class="text-on-surface-variant font-light">(Dyżur instruktora)</span>
+</a>
+<a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="mailto:kontakt@blekitnaglebia.pl">
+<span class="material-symbols-outlined text-primary text-[18px]">mail</span>
+<span>kontakt@blekitnaglebia.pl</span>
+</a>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<span>Pn–Pt: 10:00–20:00, Sob: 09:00–16:00</span>
+</div>
+</div>
+</div>
+<!-- Static Map Preview -->
+<div class="mt-8 h-48 w-full rounded-2xl overflow-hidden shadow-lg border border-white/10 relative" data-location="ul. Inflancka 8, Warszawa" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuT1LWjuvJjVex4WVUJ5rb13KiUVfc5KWh6QBkm5RSlQp1BOOqtpNRym0OgzWyAaZUQvKzJcTrnOO-R4o3pNwd-wfTXMo3MfNUpAg5gWRkFFbPIqaHgcrHu6FCsnNhtKn14sMkDPvHB6eXXME2z-W_7KiItVtY_x3r7NIkNChhYflUqKpX22VeRPjFRNIFKZWa0jxC74fDcTwDeQjZLgC1OBeOSBSxgLtApV4H7LA'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-abyss-950/20"></div>
+<div class="absolute bottom-3 left-3 px-3 py-1 rounded-full frosted-glass text-[10px] text-white font-semibold">
+              Centrum Warszawy — Dogodny parking &amp; metro
+            </div>
+</div>
+</div>
+<!-- Right: Luxury Booking Form (7 cols) -->
+<div class="lg:col-span-7 frosted-card rounded-3xl p-8 sm:p-10 border-white/15 shadow-2xl">
+<div class="flex items-center justify-between pb-6 border-b border-white/10">
+<div>
+<span class="editorial-badge text-secondary uppercase text-[10px] font-bold tracking-[0.2em]">Formularz Rezerwacji</span>
+<h3 class="font-cinzel text-2xl font-bold text-white mt-1">Zaplanuj Swoje Pierwsze Zanurzenie</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant font-light my-6 leading-relaxed">
+            Zostaw swoje dane. Nasz koordynator skontaktuje się w ciągu maksymalnie 2 godzin, aby dobrać dogodny termin sesji wstępnej oraz rozmiar sprzętu.
+          </p>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Dziękujemy za kontakt! Instruktor Błękitnej Głębi skontaktuje się z Tobą w ciągu 2 godzin.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant mb-1.5">Imię i nazwisko *</label>
+<input class="w-full px-4 py-3 rounded-xl bg-abyss-950/80 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary transition-colors" placeholder="np. Jan Kowalski" required="" type="text"/>
+</div>
+<div>
+<label class="block text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant mb-1.5">Numer telefonu *</label>
+<input class="w-full px-4 py-3 rounded-xl bg-abyss-950/80 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary transition-colors" placeholder="+48 600 000 000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant mb-1.5">Adres e-mail *</label>
+<input class="w-full px-4 py-3 rounded-xl bg-abyss-950/80 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary transition-colors" placeholder="jan@domena.pl" required="" type="email"/>
+</div>
+<div>
+<label class="block text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant mb-1.5">Wybór ścieżki / kursu *</label>
+<select class="w-full px-4 py-3 rounded-xl bg-abyss-950 border border-white/10 text-white text-sm focus:outline-none focus:border-primary transition-colors">
+<option value="owd-vip">Pakiet VIP: OWD + Deepspot (2 490 zł)</option>
+<option value="owd">Podstawowy Kurs OWD PADI (1 890 zł)</option>
+<option value="aowd">Advanced Open Water AOWD (1 650 zł)</option>
+<option value="intro">Intro nurkowe na basenie (250 zł)</option>
+<option value="bubblemaker">Dziecięce nurkowanie Bubblemaker (390 zł)</option>
+<option value="review">Odświeżenie Scuba Review (350 zł)</option>
+<option value="ekspedycja">Wyprawa Klubowa Egipt Safari 2025</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant mb-1.5">Doświadczenie &amp; preferencje (opcjonalnie)</label>
+<textarea class="w-full px-4 py-3 rounded-xl bg-abyss-950/80 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary transition-colors" placeholder="Czy nurkowałeś już z rurką (snorkeling)? Preferowane godziny sesji basenowych..." rows="3"></textarea>
+</div>
+<div class="flex items-start gap-2.5 pt-2">
+<input class="mt-1 rounded bg-abyss-950 border-white/20 text-primary focus:ring-0" id="zgoda" required="" type="checkbox"/>
+<label class="text-xs text-on-surface-variant font-light leading-snug cursor-pointer" for="zgoda">
+                Wyrażam zgodę na kontakt ze strony Akademii Nurkowej Błękitna Głębia w celu przygotowania oferty szkoleniowej.
+              </label>
+</div>
+<button class="w-full mt-4 py-4 rounded-full bg-gradient-to-r from-secondary-container to-[#ff8c69] text-white font-bold text-xs uppercase tracking-widest shadow-[0_4px_30px_rgba(255,107,74,0.45)] hover:shadow-[0_6px_35px_rgba(255,107,74,0.6)] hover:scale-[1.01] transition-all flex items-center justify-center gap-2" type="submit">
+<span>Wyślij zgłoszenie na kurs</span>
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</button>
+</form>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-tertiary">lock</span> Szyfrowanie SSL 256-bit</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-primary">schedule</span> Odpowiedź do 2 godzin</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 10. STOPKA EDITORIAL (EXPEDITION JOURNAL)   -->
+<!-- ========================================== -->
+<footer class="w-full bg-abyss-950 text-on-surface border-t border-white/10 pt-20 pb-12">
+<div class="max-w-[1360px] mx-auto px-5 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
+<!-- Brand Narrative -->
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full border border-primary/40 p-0.5 flex items-center justify-center bg-primary/10">
+<img alt="Błękitna Głębia" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDXNJzY5B27Er2aO5PN71RXM1zGi6VH4OUAa6k0I1eayH1zwy7SczQMC5VYKfbHwCkvyna0uF_fX39jBS-MQqXrWlKL9_cepJ1e6InKZYorSVXELXsBKue2TZ4impShUFMwZgtIh8Tdmv3tNXQjgzU6Hrty9ehuuSL2FH6mIdL0u4LyYjJIBV6hlm2DOWzHxx6co5Lc89CS8mz99ifFW6IXon0OyCmhwHzKiqabd0eQ"/>
+</div>
+<span class="font-cinzel text-lg tracking-widest font-bold text-white">BŁĘKITNA GŁĘBIA</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-light">
+            Autoryzowane Centrum Szkoleniowe PADI 5-Star Dive Center &amp; CMAS Polska. Promujemy bezpieczne, świadome obcowanie z oceanem i eksplorację głębin.
+          </p>
+<div class="flex items-center gap-2 pt-2">
+<span class="px-2.5 py-1 rounded bg-white/5 text-[10px] font-bold text-primary border border-primary/20">PADI #38192</span>
+<span class="px-2.5 py-1 rounded bg-white/5 text-[10px] font-bold text-tertiary border border-tertiary/20">CMAS M2</span>
+<span class="px-2.5 py-1 rounded bg-white/5 text-[10px] font-bold text-secondary border border-secondary/20">DAN Europe</span>
+</div>
+</div>
+<!-- Links: Courses -->
+<div>
+<h4 class="font-cinzel text-sm font-bold text-white uppercase tracking-wider mb-4">Certyfikaty &amp; Kursy</h4>
+<ul class="space-y-2.5 text-xs text-on-surface-variant font-light">
+<li><a class="hover:text-primary transition-colors" href="#sciezki">Kurs Open Water Diver (OWD)</a></li>
+<li><a class="hover:text-primary transition-colors" href="#sciezki">Advanced Open Water (AOWD)</a></li>
+<li><a class="hover:text-primary transition-colors" href="#sciezki">Warsztaty Deepspot 45m</a></li>
+<li><a class="hover:text-primary transition-colors" href="#sciezki">Nurkowanie dla dzieci Bubblemaker</a></li>
+<li><a class="hover:text-primary transition-colors" href="#sciezki">Suchy skafander &amp; Nitrox</a></li>
+<li><a class="hover:text-primary transition-colors" href="#sciezki">Odświeżenie Scuba Review</a></li>
+</ul>
+</div>
+<!-- Links: Locations -->
+<div>
+<h4 class="font-cinzel text-sm font-bold text-white uppercase tracking-wider mb-4">Warszawskie Bazy</h4>
+<ul class="space-y-3 text-xs text-on-surface-variant font-light">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">location_on</span>
+<div>
+<span class="text-white font-medium block">Basen Miejski Inflancka:</span>
+<span>ul. Inflancka 8, Warszawa</span>
+</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px] mt-0.5">waves</span>
+<div>
+<span class="text-white font-medium block">Treningi Głębokie Deepspot:</span>
+<span>Mszczonów k. Warszawy</span>
+</div>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">call</span>
+<span>+48 22 840 90 20</span>
+</li>
+</ul>
+</div>
+<!-- Newsletter & Socials -->
+<div>
+<h4 class="font-cinzel text-sm font-bold text-white uppercase tracking-wider mb-4">Klub Podwodny</h4>
+<p class="text-xs text-on-surface-variant font-light leading-relaxed mb-3">
+            Odbierz bezpłatny e-book „Wielki Błękit — Przewodnik bezpiecznego startu w nurkowaniu”.
+          </p>
+<form class="space-y-2" onsubmit="return false;">
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 text-xs focus:outline-none focus:border-primary transition-colors" placeholder="Twój adres e-mail" type="email"/>
+<button class="w-full py-2.5 rounded-full bg-primary/20 hover:bg-primary text-primary hover:text-abyss-950 border border-primary/40 font-bold text-xs uppercase tracking-wider transition-all" type="submit">
+              Dołącz do klubu
+            </button>
+</form>
+<div class="flex items-center gap-2 mt-4">
+<a class="w-8 h-8 rounded-full frosted-glass flex items-center justify-center text-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">public</span>
+</a>
+<a class="w-8 h-8 rounded-full frosted-glass flex items-center justify-center text-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+</a>
+<a class="w-8 h-8 rounded-full frosted-glass flex items-center justify-center text-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">smart_display</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom Credits -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant/70 font-light">
+<p>© 2025 Błękitna Głębia Diving Academy Warszawa. Wszelkie prawa zastrzeżone.</p>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Polityka prywatności</a>
+<a class="hover:text-primary transition-colors" href="#">Regulamin szkoleń</a>
+<a class="hover:text-primary transition-colors" href="#">Standardy PADI</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
